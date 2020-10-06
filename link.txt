@@ -1,0 +1,9 @@
+There are four links :-
+visited 
+unvisited
+hover
+active
+
+BORDER:
+1.  border-collapse: collapse; // 
+2.  border:

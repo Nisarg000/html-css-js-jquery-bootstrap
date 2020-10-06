@@ -1,0 +1,37 @@
+CSS Unit-2
+CSS Properties & Attributes
+LISTS:
+list-style-type properties specifies the type of list item marker.
+Value 				Description		Example
+	
+decimel				Number			1,2,3,4,5,6...
+decimel-leading-zero		0 before the number	01,02,03...
+
+remaining to write
+
+
+
+
+
+
+
+
+List Style:
+e.g. ul{llist-style-:square inside;
+	url("sqpurple.gif"); [shorthand propeerty 1 mark question]
+Property			Description		
+list-style
+list-style-image
+list-style-
+list-style-
+list-style-
+
+CSS POSITIONS:
+static(default)
+relative(space generate)
+fixed()
+absdolute(2 objects used e.g. article and section and p etc. together)
+
+
+
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+	<script type="text/javascript">
+
+		function char_count(str,letter) //str,length
+		{
+			var letter_count = 0;
+			for (var position = 0; position < str.length; position++) 
+			{
+				if (str.charAt(position) == letter) 
+				{
+					letter_count += 1;
+				}
+			}
+			return letter_count;
+		}
+		var a = prompt("Enter words"); //e.g. a = abc;
+		var b = prompt("Enter letter"); //e.g. l;
+		document.write( char_count(a,b) );
+	</script>
+</head>
+<body>
+
+</body>
+</html>

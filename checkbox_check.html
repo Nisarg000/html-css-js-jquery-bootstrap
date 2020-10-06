@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Who cares</title>
+</head>
+<body>
+<form>
+	Hobby : <input type = "checkbox" id = "hobby" > <br>
+	<input type = "submit" onclick = "get()">
+</form>
+
+<script type="text/javascript">
+	function get()
+	{
+		let a = document.getElementById('hobby');
+		if ( document.getElementById("hobby").checked == false)
+		{
+			alert("Yo! Idiot you are supposed to tick the checkbox!");
+		}
+	}
+</script>
+</body>
+</html>

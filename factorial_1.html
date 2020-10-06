@@ -1,0 +1,26 @@
+<!-- JS Program to find factorial using recursive function -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(n)
+        {
+            if (n === 0)
+            {
+                return 1;
+            }
+            return n * factorial(n-1); // heres the recurssion
+        }
+
+        var n=parseInt(prompt("Enter the value:")); // enter any value
+
+        alert (factorial(n));
+    </script>
+</body>
+</html>

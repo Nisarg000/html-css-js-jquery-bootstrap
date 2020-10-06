@@ -1,0 +1,11 @@
+Property name:-TABLE
+1 Border:- linkname,type,color.
+2 Border-collapse:- collapse
+3 Text-align:- left,right,center
+4 Border-Bottom/top:- e.g. 1px solid black. (displays border only down/upside)
+5 Hover:- e.g. tr:hover {background-color: red;color :green}
+6 Background-Color:- e.g.tr:nth-child(even){background-color:red;}
+7 Height/width:- e.g. height:200px;
+8 Padding:--padding-coloumn:50px;(for generaTRING SPACE)
+9 Vertical-Align:- bottom,top,middle.
+10 

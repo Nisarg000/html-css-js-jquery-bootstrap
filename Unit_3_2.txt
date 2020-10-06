@@ -1,0 +1,84 @@
+TYPES OF JAVA SCRIPT
+THERE ARE TWO TYPES OF JS:-
+1.Internal //script tag is a paired tag it can be written on head or body tag 
+2.External
+--------------------------------------------
+e.g. <script> document.write("Hello World") </script>
+____________________________________________
+
+IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![JS is a procedurial language so ++a and a++ is different]
+
+
+
+//	a++ = initialize and + (z=a++) 
+//	++a = 
+
+
+THERE ARE FIVE OPERATORS IN JS:-
+
+1.Arithmetic operators:-add,sub,multi,div,modulus;
+2.Increment operators:- ++;
+3.Decrement operators:- --;
+4.Logical Operators:- [There are three logical operators]
+1.& 
+	( 
+		 Both conditions should be true otherwise it will be false
+e.g. var x=6;
+     var y=3;
+	document.write(x < 10 && y < 1,"<br>"; //false
+	document.write(x < 10 && y > 1,"<br>"; //true
+	);
+2. || 
+	(
+		;		
+	);
+3. not(!)
+	(
+		;	
+	);
+
+5.COMPARISSON OPERATORS:- ==,===,<,>,>=,<=,!=;
+
+6. String Operators:-
+1.+(concade to strings[join])
+2.+=
+
+7.Assignment Operators:-
+1. =
+2. +=
+3. _=
+4. *=
+5. /=
+6. %=;
+
+8.Ternary[conditional] Operator:-
+1. ? :;(e.g. x > y ? x : y) 
+
+[IMPORTANT]9.New Operator:-(To collab multiple variables)
+1.; new 	
+	(
+		e.g. var person= new Object();
+			person.fn="a";
+			person.ln="b";
+			person.ph=123;
+			person.add="d";
+
+			document.write(person.fn +person.ln+person.ph+person.add);
+	) 
+10.delete Operator:-
+delete
+	(
+		var person= new Object();
+			person.fn="a";
+			person.ln="b";
+			person.ph=123;
+			person.add="d";
+			delete person.fn;
+			document.write(person.fn);;
+	);
+11. Null
+	(
+		var person=null;
+	)
+
+DOM - Document Object Model

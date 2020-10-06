@@ -1,0 +1,10 @@
+[IMPORTANT]HTML DOM(Document Object Model):-//browser is called as windows() here\
+Q TOP most object of HTML DOM IS _____.
+ANS. Window
+------------------------------------------------------------------------------------------------------------------------
+//document is in-built class && write is the method of document class.
+Q W
+
+
+
+

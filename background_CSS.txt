@@ -1,0 +1,16 @@
+CSS BACKGROUND Properties:-
+
+background-color:();
+background-image: url("path");
+background-repeat:no-repeat;
+background-repeat:repeat-x/y;
+background-position:right top;[leave space](right bottom, left top);
+margin-right:200px;[used for leaving space from text and image by not overlapping the image when zoomed]
+[important] background-attachment:fixed(); // to keep the image fixed in the webpage even when zoomed
+background: red url("path.jpg/png") no-repeat right top; (shorthand) // To write everything in one line and proper sequence
+letter-spacing:5pt;
+line-height:150%; // px,%,5(numbers directly);
+word-spacing:5pt; // pt means point;
+text-direction:ltr //left to right ot rtl which is right to left;
+
+[important] Default line height in most browsers is about 110/120%.

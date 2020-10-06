@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+	<script type="text/javascript">
+		
+		function uppercase(str)
+		{
+			var array1 = str.split(''); //'H''e''l''l' 'o','','W'o'r'l'd'
+			var newarray1 = [];//store answer in newarray1 //Hello World
+
+			for(var x = 0;x < array1.length;x++)
+				{//PUSH is an in-built method to insert//SLICE PRINTS CHAR from that space.
+					newarray1.push(	array1[x].charAt(o).toUpperCase() + array1[x].slice(1) );
+				}
+				
+			return newarray1.join('');
+		}
+
+		var a = prompt("Enter string"); //Hello World
+		var a1 = uppercase(a); //fucntion callsee line 9
+		document.write(a1);
+	</script>
+</head>
+<body>
+</body>
+</html>

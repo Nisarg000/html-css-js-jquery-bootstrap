@@ -1,116 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Product</title>
-    <style>
-        .main
-        {
-            height: 100px; width: 300px;
-            border: 1px solid black;
-            background-color: cornflowerblue;
-        }
-        .sidekick
-        {
-            color: white;
-            height: 200px; width: 300px;
-            border: 1px solid black;
-            background-color:blueviolet;
-        }
-    </style>
+	<title>table mam</title>
+	<style >
+		table
+		{
+			border: 3px dotted red;
+			text-align: center;
+		}
+	</style>
 </head>
 <body>
-<form>
-    <div class="main">
-        <table>
-            <tr>
-                <td>
-                    Product : <input type="text" id="prd_name">
-                </td>
-                
-            </tr>
+<h1>Add a border to a table:</h1>
+<table border="1">
+	<tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+	</tr>
+	<tr>
+		<td>Peter</td>
+		<td>Griffin</td>
+	</tr>
+	<tr>
+		<td>Lois</td>
+		<td>Griffin</td>
+	</tr>
 
-            <tr>
-                <td>
-                    Quantity : <input type="text" id = "qty">
-                </td>
-                
-            </tr>    
-            
-            <tr>
-                <td>
-                    Price <input type="text" id = "cash">         
-                </td>
-                
-            </tr>
-
-            <tr>
-                <td>
-                    <input type="button" value="add to cart" onclick="display()">
-                 </td>
-            </tr>
-
-        </table>
-    </div>
-
-    <div class="sidekick">
-        <table>
-            <tr>
-                <td>
-                    Product Name : 
-                </td>
-                <td>
-                    <h1 id="prd_name-ans"></h1>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    Quantity : 
-                </td>
-                <td>
-                    <span id="qty-ans"></span>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    Price : 
-                </td>
-                <td>
-                    <span id="cash-ans"></span>
-                </td>
-            </tr>
-        </table>
-    </div>
-</form>
-
-<script>
-    function display()
-    {
-       let prod =  document.getElementById('prd_name').value;
-        prod = document.getElementById('prd_name-ans').innerHTML = prod;    
-
-        let quantity = document.getElementById('qty').value;
-        if (isNaN(quantity)) 
-        {
-            alert('enter a number not an character!');            
-        }
-        else
-        {
-            quantity = document.getElementById('qty-ans').innerHTML = quantity;
-        }
-
-        let price = document.getElementById('cash').value;
-        
-        price *= quantity;
-
-        document.getElementById('cash-ans').innerHTML = price;  
-
-    }
-</script>
-
+</table>
 </body>
 </html>

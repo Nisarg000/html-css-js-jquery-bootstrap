@@ -1,0 +1,65 @@
+css padding is used to generate space around the content.
+The property name is padding-top
+
+
+Question 2: Write a CSS to define an id selector as follows:
+Id name: "Decorate"
+Properties:
+Color:green
+Align Justify
+Overline
+Bold
+
+Answer2: <style type="text/css">
+		#decorate
+		{
+			color: green;
+			text-align:justify;
+			text-decoration: overline;
+			font-weight: bold;
+
+		}
+	</style>
+</head>
+<body>
+<div id="decorate">Pure_Donkey</div>
+-----------------------------------------------------------------------------------------------------------------------------
+Question:Write an internal CSS to display followinf=g styles:
+h1 tag in upper case and font color blue.
+h3 tag in lower case and font color green.
+p tag in italic and font color yellow.
+body background color should be in hexa value 
+Answer: <!DOCTYPE html>
+<html>
+<head>
+	<title>1</title>
+	<style type="text/css">
+		h1
+		{
+			text-transform: uppercase;
+			color: blue;
+
+		}
+		h3
+		{
+			text-transform: lowercase;
+			color: green;
+		}
+		p
+		{
+			font-style: italic;
+			color: yellow;
+			
+		}
+		body
+		{
+			color: #ffcc
+		}
+	</style>
+</head>
+<body>
+<h1>Hello World</h1>
+<h3>Hello World</h3>
+<p>Hello World</p>
+</body>
+</html>

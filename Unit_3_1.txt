@@ -1,0 +1,28 @@
+UNIT 3:- INTRODUCTION TO JAVASCRIPT
+---------------------------------------------------------------------------------
+
+(1)Java script is a scripting language,it is used for client-side web development.
+(2)Javascript allows for interactivity.
+(3)Javascript was developed by netscape. 
+---------------------------------------------
+FEATURES OF JAVASCRIPT
+
+(1)It is embeded with HTML page.
+(2)It executes on client.
+(3)It is simple programming statements combined with HTML tags.
+(4)It is interpreted language[Not compiled]
+-------------------------------------------------
+ADVANTAGES OF JS:-
+(1)It is a interpreted language
+(2)Emedded within HTML.
+(3)Easy to learn.
+(4)Quick development.
+(5)Designed for simple and small programs.
+(6)Good Performance.
+(7)It is designed for user events.
+(8)Easy testing.
+(9)Platform independent.
+-------------------------------------------------
+DISADVANTAGES OF JS:-
+(1)Security.
+(2)Reliance on end-user.
