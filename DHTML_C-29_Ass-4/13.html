@@ -1,0 +1,63 @@
+<!--  Implement following operations :
+	1. Declare Array 
+	2. Print Array 
+	3. Print Reverse Array 
+	4. Join Array Using “@” 
+	5. Print Array Length 
+	6. Delete 2 nd Element -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>13</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+
+<p id = "for_array"></p>
+
+<script>
+				/*1*/
+	var languages = ["HTML", "C", "C++ <br>"]; //Declaration
+				/*2*/
+	document.getElementById("for_array").innerHTML = languages;
+				/*3*/ //Uncomment this area to see the array in reverse
+
+
+	/*var seasons = ["Summer", "Winter", "Autumn",];
+	document.getElementById("for_array").innerHTML = seasons;
+	function myFunction() 
+	{
+ 	 seasons.reverse();
+ 	 document.getElementById("for_array").innerHTML = fruits;
+ 	}*/
+
+ 				/*4*/
+ 	function combineArray(array1, array2) 
+ 	{
+	  document.write([].concat(array1, array2));
+	}
+
+	let array_int = [11,12,13];
+	let array_string = 'gls_university';
+
+	combineArray(array_int, array_string);
+
+				/*5*/ //Uncomment this to see the length
+
+	/*var languages = ["HTML", "C", "C++ <br>"];
+	document.getElementById("for_array").innerHTML = languages.length;*/
+
+				/*6*/ // Deleting an array is much simpler than the below program so don't read it
+	let value = 3
+
+	let arr = [1, 2, 3, 4, 5, 3]
+
+	document.write("<br>Original array" + arr);
+
+	arr = arr.filter(item => item !== value)
+
+	document.write("<br> Deleted array" + arr);				
+</script>
+ 
+</body>
+</html>

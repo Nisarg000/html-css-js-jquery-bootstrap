@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to find factorial of a number -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>12</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+<script>
+    function FACTORIAL(number)
+    {
+	    let factorial = 1;
+
+	    if(number > 1) 
+	    {
+	        for(let i = 2; i <= number; i++) 
+	        {
+	            factorial *= i;
+	        }
+	    }
+	    return factorial;
+	}
+	document.write(	FACTORIAL(5)	);//change the number here to see your output
+
+</script>
+</body>
+</html>

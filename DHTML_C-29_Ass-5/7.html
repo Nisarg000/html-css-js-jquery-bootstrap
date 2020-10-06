@@ -1,0 +1,45 @@
+<!-- Create a webpage which includes image & button. When you hover the
+mouse on the objects, the size(height & width) will be increased and
+when you out the mouse the size(height & width) will be decreased. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Increasing and Decreasing Image Size</title>
+<script>
+    function zoomin()
+    {
+        let myImg = document.getElementById("strawberry"); //with reference to line 
+        let currWidth = myImg.clientWidth; // built in function
+        if(currWidth == 500) //to set restrictions so that image does not get blurred heavily
+        {
+            alert("Maximum zoom-in level reached.");//to warn the users
+        } 
+        else
+        {
+            myImg.style.width = (currWidth + 50) + "px";
+        } 
+    }
+    function zoomout()
+    {
+        let myImg = document.getElementById("strawberry");
+        let currWidth = myImg.clientWidth;
+        if(currWidth == 50)
+        {
+            alert("Maximum zoom-out level reached.");
+        } 
+        else
+        {
+            myImg.style.width = (currWidth - 50) + "px";
+        }
+    }
+</script>
+</head>
+<body>
+    <p>
+        <button type="button" onclick="zoomin()">Zoom In</button>
+        <button type="button" onclick="zoomout()">Zoom Out</button>
+    </p>
+    <img src="strawberry.jpg" id="strawberry" width="250">
+</body>
+</html>

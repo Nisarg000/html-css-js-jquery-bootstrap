@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <title>10</title>
+        <style>
+            #field{
+                width: 60%;
+                text-align: center;
+                margin-top: 50px;
+                margin: auto;
+            }
+        </style>
+        <script>
+            function myfunction()
+            {
+                var fname=document.getElementById("fname").value;
+                var lname=document.getElementById("lname").value;
+                document.getElementById("fname_d").innerHTML="first name : " + fname;
+                document.getElementById("lname_d").innerHTML="last name : " + lname;
+                var m=document.getElementById("m");
+                var f=document.getElementById("f");
+                if(m.checked==true)
+                {
+                    document.getElementById('Gender_d').innerHTML="Gender : " + m.value
+
+                }
+                else if(f.checked==true)
+                {
+                    document.getElementById('Gender_d').innerHTML="Gender : " + f.value
+                }
+
+                var  h1=document.getElementById('H1');
+                var  h2=document.getElementById('H2');
+                var  h3=document.getElementById('H3');
+                if(h1.checked==true)
+                {
+                    document.getElementById("hob").innerHTML="hobbie : " + h1.value;
+                }
+                else if(h2.checked==true)
+                {
+                    document.getElementById("hob").innerHTML="hobbie : " + h2.value;
+                }
+                else if(h3.checked==true)
+                {
+                    document.getElementById("hob").innerHTML="hobbie : " + h3.value;
+                }
+               // var country=document.getElementById("Country");
+                //document.getElementById("C").innerHTML="Country : " + country.value;
+
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset id="field">
+            <h1 id="h">Registration Form</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td>First Name </td>
+                        <td><input type="name" id="fname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Last Name </td>
+                        <td><input type="name" id="lname" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender </td> 
+                        <td>
+                        <input type="radio" id="m"  name="Gender" required value="Male">Male 
+                        <input type="radio" id="f" name="Gender" required value="Female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies </td>
+                        <td>
+                        <input type="checkbox" id="H1" name="hobb" value="singing" required>singing 
+                        <input type="checkbox" id="H2" name="hobb" value="Criket" required>Criket 
+                        <input type="checkbox" id="H3" name="hobb" value="dancing" required>dancing 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Country </td> 
+                        <td> 
+                            <select name="Country" id="Country">
+                                <option value="--opt--">--opt--</option>
+                                <option value="india">india</option>
+                                <option value="Usa">Usa</option>
+                                <option value="China">China</option>
+                                <option value="Dubai">Dubai</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr >
+                        <td colspan="3" >
+                            <input type="button" name="button" id="button" value="validate_fields" onclick="myfunction()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <p id="fname_d"></p>
+            <p id="lname_d"></p>
+            <p id="Gender_d"></p>
+            <p id="hob"></p>
+            <p id="C"></p>
+        </fieldset>
+        
+    </body>
+</html>

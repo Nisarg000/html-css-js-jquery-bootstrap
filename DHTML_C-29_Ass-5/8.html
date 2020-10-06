@@ -1,0 +1,38 @@
+<!--Create a webpage which includes division. 
+When you move the mouse over the division, it will display the Co-ordinators of X & Y. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>8</title>
+<meta charset = "utf-8"/>
+<style>
+div 
+{
+  width: 200px; height: 200px;
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+    <div onmousemove = "myFunction(event)" onmouseout = "clearCoordinates()"> </div>
+
+<p id="box"></p>
+
+<script type="text/javascript" language="javascript">
+
+function myFunction(e)
+{
+  let x = e.clientX;
+  let y = e.clientY;
+  let coor = "The Coordinates of the box is : (" + x + "," + y + ")";
+  document.getElementById("box").innerHTML = coor;
+}
+
+function clearCoordinates()
+{
+  document.getElementById("box").innerHTML = "";
+}
+
+</script>
+</body>
+</html>

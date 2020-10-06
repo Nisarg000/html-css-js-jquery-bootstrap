@@ -1,0 +1,30 @@
+<!--Write a JavaScript program to determine whether a given year is a leap year or not. (Using function)   -->
+<html>
+<head>
+<title> 5 </title>
+</head>
+<body>
+<script type="text/javascript" language = "javascript">
+
+	function leapyear()
+	{
+		var year = parseInt( prompt("Enter an year") );
+
+		if( ( year % 4 == 0) && ( year % 100  != 0) || (year % 400 == 0) )
+		{
+			alert(year + " is an leap year");  
+		}
+		else
+		{
+			alert(year + " is not an leap year");  
+		}
+	}
+
+	leapyear();
+
+</script>
+ 	<noscript>
+        Sorry...JavaScript is needed to go ahead !
+    </noscript> 
+</body>
+</html>

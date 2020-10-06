@@ -1,0 +1,25 @@
+<!-- Create a webpage which includes button. When the mouse is over on that,
+the space will be generated from the left side else it will display at the original place -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>9</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+	<button onmouseover="bigButton(this)" onmouseout="normalButton(this)"  width="52" height="52"></button>
+<script type="text/javascript" language="javascript">
+function bigButton(size)
+{
+	size.style.height = "164px";
+	size.style.width = "164px";
+}
+
+function normalButton(size)
+{
+  size.style.height = "32px";
+  size.style.width = "32px";
+}
+</script>
+</body>
+</html>

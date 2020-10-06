@@ -1,0 +1,40 @@
+<!--  Write a JavaScript conditional statement to find the largest of five numbers. Display an alert box to show the result. Sample numbers: -5, -2, -6, 0, -1 Output: 0  -->
+<html>
+<head>
+<title> 6 </title>
+</head>
+<body>
+<script type="text/javascript" language = "javascript">
+
+	var a = parseInt(	prompt("Enter a variable")	);
+	var b = parseInt(	prompt("Enter a variable")	);
+	var c = parseInt(	prompt("Enter a variable")	);
+	var d = parseInt(	prompt("Enter a variable")	);
+	var e = parseInt(	prompt("Enter a variable")	);
+	if (a > b && a > c && a > d && a > e) 
+	{
+		alert("The first number " + a + " is the largest");
+	}
+	else if(b > c && b > d && b > e)
+	{
+		alert("The second number " + b + " is the largest");
+	}
+	else if (c > d && c > e) 
+	{
+		alert("The third number " + c + " is the largest");
+	}
+	else if (d > e) 
+	{
+		alert("The fourth number " + d + " is the largest");
+	}
+	else
+	{
+		alert("The fifth number " + e + " is the largest");
+	}
+
+</script>
+ 	<noscript>
+        Sorry...JavaScript is needed to go ahead !
+    </noscript> 
+</body>
+</html>

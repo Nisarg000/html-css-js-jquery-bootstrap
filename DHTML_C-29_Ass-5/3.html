@@ -1,0 +1,62 @@
+<!-- the information which is entered in the textbox,
+is displayed on the same page. The text should be in bold-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>3</title>
+<meta charset = "utf-8"/>
+
+
+<script type="text/javascript" language="javascript">
+	function showInput()
+	{
+		document.getElementById('display').innerHTML = 
+        document.getElementById("user_input").value; 
+	}
+</script>
+</head>
+<body>
+<form>
+
+<table >
+	<tr>
+		<td><h1>SUBSCRIBE TO OUR MAILING LIST</h1></td>
+	</tr>
+	<tr>
+		<td align = "right" ><font color="red" ><sup>*</sup></font>indicates required</td>
+	</tr>
+	<tr>
+		<td>Email Address</td>
+	</tr>
+	<tr>
+		<td>
+			<input type = "email" id="user_input">
+		</td>
+	</tr>
+	<tr>
+		<td>First Name</td>
+	</tr>
+	<tr>
+		<td>
+			<input type = "text" id="user_input">
+		</td>
+	</tr>
+	<tr>
+		<td>Last Name</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" id="user_input">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input id="subscribe" type="button" onclick = "showInput()" value="SUBSCRIBE" name="">
+		</td>
+	</tr>
+
+</table>
+</form>
+<p><span id="display"></span></p>
+</body>
+</html>

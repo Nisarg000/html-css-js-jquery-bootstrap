@@ -1,0 +1,45 @@
+<!--Create a webpage like below :-
+• When the mouse is over on the firstName input field, the
+message will be displayed on the same page as “Please Enter the
+firstName in Capital Letters only”.
+• Note : Do it with all the fields.
+• When the mouse is over on the heading, the text color should be
+changed.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>10</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+<table>
+	<tr>
+		<td colspan="2"><h1 onmouseover="this.style.color='red';" onmouseout="this.style.color='magenta';">STUDENT DETAIL FORM</h1></td>
+	</tr>
+	<tr>
+		<td>First Name : </td>
+		<td><input type="text" id = "form"  oninput = "display()"></td>
+	</tr>
+	<tr>
+		<td>Last Name : </td>
+		<td><input type = "text" id = "form" oninput = "display()"></td>
+	</tr>
+	<tr>
+		<td>Address : </td>
+		<td><input type = "text" id = "form" oninput = "display()"></td>
+	</tr>
+	<tr>
+		<td>Phone_number</td>
+		<td><input type = "text" id = "form" oninput = "display()"></td>
+	</tr>
+</table>
+<p id="message"></p>
+<script type="text/javascript" language="javascript">
+    function display()
+    {
+    	let a = document.getElementById("form").value;
+    	document.getElementById('message').innerHTML = "Please enter the fields with capital letters only.";
+    }
+</script>
+</body>
+</html>

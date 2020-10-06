@@ -1,0 +1,50 @@
+<!-- Create a webpage which has input field.
+When the user is pressing a key in the input field :
+• Alert box will be displayed.
+• Onkeydown event, the background color should be change.
+• Onkeyup event, the background color should be change & the
+text should be display in uppercase. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>5</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+	Enter something : 		  <input type = "text" onkeydown="warning()">
+	Enter Something again :   <input type = "text" id="first_name" onblur="puts()" onkeyup="upperCase()">
+	<p> Enter your fav colour <input type = "text" id = "color">
+		<button onclick = "changeColor()";
+				onkeypress = "changeColor()";> Click 
+		</button>
+	</p>
+<script type="text/javascript" language="javascript">
+
+	function warning()
+	{
+		alert("Did you just enter something ?");
+
+		let color = document.getElementById("color").innerHTML;
+		document.body.style.background = "yellow";
+	}
+
+	function changeColor()
+	{
+		let color = document.getElementById("color").value;
+		document.body.style.background = color;
+	}
+	function upperCase()
+	{
+		let color = document.getElementById("color").innerHTML;
+		document.body.style.background = "brown";
+		
+	}
+	function puts()
+	{
+		let a = document.getElementById('first_name');
+        a.value = alert(a.value.toUpperCase());
+	}
+</script>
+
+</body>
+</html>

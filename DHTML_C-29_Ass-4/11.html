@@ -1,0 +1,38 @@
+<!-- Write a JavaScript program to find prime number -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>11</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+<script>
+	function findPrime()
+	{
+	    var number = document.getElementById('num').value; // to store the value of 'num' in var number
+	    var c = 0;
+
+	    for (i = 1; i <= number; i++)
+	     {
+	        if (number % i == 0) 
+	        {
+	            c = c + 1;
+	        }
+	    }
+
+	    if (c == 2) 
+	    {
+	        document.getElementById('result').innerHTML = number + ' is a Prime number';
+	    }
+	    else
+	    {
+	        document.getElementById('result').innerHTML = number + ' is NOT a Prime number';
+	    }
+}        
+</script>
+
+<input type="number" id="num" name="num"/>
+<input type="button" value="check for Prime Number" onclick="findPrime()" name="find" />
+<div id="result"></div>
+</body>
+</html>

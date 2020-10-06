@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>7</title>
+
+	<style type="text/css">
+
+		.decimels
+		{
+			list-style-type: decimal-leading-zero;
+		}
+		.Lowercase
+		{
+			list-style-type: lower-alpha;
+		}
+		.Nope
+		{
+			list-style-type: none;
+		}
+		.Rome
+		{
+			list-style-type: lower-roman;
+		}
+		.Unorderd
+		{
+			font-size: 22px;font-weight: bold;
+		}
+		.Orderd
+		{
+			font-size: 22px;font-weight: bold;padding: 0px 20px;
+		}
+		.DECIMEL
+		{
+			padding: 0px 20px;
+		}
+	</style>
+</head>
+<body>
+<table>
+
+	<tr>
+		<tr>
+			<td class="Unorderd">Unordered lists</td>
+			<td class="Orderd">Ordered lists</td>
+		</tr>
+		<tr>
+			<td><b>Disc</b></td>
+			<td class="DECIMEL"><b>Decimel</b></td>
+		</tr>
+
+		<tr>
+			<td>
+				<ul type="disc">
+					<li>First item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol type="decimel">
+					<li>First item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul type="disc">
+					<li>Second item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol type="decimel" start="2">
+					<li>Second item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul type="disc">
+					<li>Third item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol type="decimel" start="3">
+					<li>Third item.</li>
+				</ol>
+			</td>
+		</tr>
+
+		<tr>
+			<td><b>Square</b></td>
+			<td><b>Decimel with leading zeros</b></td>
+		</tr>
+
+		<tr>
+			<td>
+				<ul type="Square">
+					<li>First item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol  class="decimels" type="decimel">
+					<li>First item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul type="Square">
+					<li>Second item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol class="decimels" type="decimel" start="2">
+					<li>Second item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul type="Square">
+					<li>Third item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol class="decimels" type="decimel" start="3">
+					<li>Third item.</li>
+				</ol>
+			</td>
+		</tr>
+
+		<tr>
+			<td><b>Circle</b></td>
+			<td><b>Lowercase ascii letters</b></td>
+		</tr>
+
+		<tr>
+			<td>
+				<ul type="circle">
+					<li>First item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol type="a" class="Lowercase">
+					<li>First item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul type="circle">
+					<li>Second item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol type="a" class="Lowercase"  start="2">
+					<li>Second item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul type="circle">
+					<li>Third item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol type="a" class="Lowercase" start="3">
+					<li>Third item.</li>
+				</ol>
+			</td>
+		</tr>
+
+		<tr>
+			<td><b>None - no bullets</b></td>
+			<td><b>Lowercase roman numerals</b></td>
+		</tr>
+
+		<tr>
+			<td>
+				<ul class="NOPE">
+					<li>First item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol class="Rome">
+					<li>First item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul class="NOPE">
+					<li>Second item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol class="Rome" start="2">
+					<li>Second item.</li>
+				</ol>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<ul class="NOPE">
+					<li>Third item.</li>
+				</ul>
+			</td>
+			<td>
+				<ol class="Rome" start="3">
+					<li>Third item.</li>
+				</ol>
+			</td>
+		</tr>
+
+	</tr>
+</table>
+</body>
+</html>

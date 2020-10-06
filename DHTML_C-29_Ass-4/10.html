@@ -1,0 +1,35 @@
+<!-- Write a JavaScript function to count the number of vowels in a given string. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>10</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+<script>
+
+	function getVowels(str) 
+	{
+	  let vowelsCount = 0;
+
+	  let string = str.toString(); //datacasting in c concept through which num changes to string.
+
+	  for (let i = 0; i <= string.length; i++) 
+	    {
+		  if (string.charAt(i) == "a" || string.charAt(i) == "A" || 
+		  	  string.charAt(i) == "e" || string.charAt(i) == "E" ||
+		      string.charAt(i) == "i" || string.charAt(i) == "I" ||
+		      string.charAt(i) == "o" || string.charAt(i) == "O" ||
+		      string.charAt(i) == "u" || string.charAt(i) == "U"  )
+		    {
+		      vowelsCount += 1;
+		    }
+	    }
+	  document.write(vowelsCount);
+	}
+
+	getVowels('glsUniversity') //any random text and function calling from line 11
+
+</script>
+</body>
+</html>

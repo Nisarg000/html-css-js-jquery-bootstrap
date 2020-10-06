@@ -1,0 +1,24 @@
+<!-- Create a webpage which has input field.
+When you leave the input field, a function is triggered which
+transforms the input text to upper case in alert box & input field. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>1</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+<form>
+    Name <input type = "text" id = "first_name" onblur = "get()">
+
+
+<script type="text/javascript" language="javascript">
+    function get()
+    {
+        let a = document.getElementById('first_name');
+        a.value = alert(a.value.toUpperCase()); 
+    }
+</script>
+</form>
+</body>
+</html>

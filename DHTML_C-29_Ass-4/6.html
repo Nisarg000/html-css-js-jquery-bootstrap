@@ -1,0 +1,27 @@
+<!-- Write a JavaScript program to find the Armstrong numbers of 3 digits. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>6</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+<script>
+  var e, x, d = 0;
+  var b = prompt("Enter a number");//e.g 371
+  x = b;
+
+  while (x > 0) {
+    e = x % 10;
+    x = parseInt(x/10);
+    d = d + (e*e*e);
+  }
+
+  if (b == d)
+    alert("given number is an armstrong number");
+  else
+    alert("given number is not an armstrong number");
+  
+</script>
+</body>
+</html>

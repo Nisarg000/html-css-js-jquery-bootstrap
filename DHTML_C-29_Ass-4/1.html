@@ -1,0 +1,21 @@
+<!-- Write a JavaScript function that returns a passed string with letters in alphabetical order. 
+    Example string: 'webmaster' Expected Output: 'abeemrstw'
+    Assume punctuation and numbers symbols are not included in the passed string.  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>1</title>
+    <meta charset = "utf-8"/>
+</head>
+<body>
+    <script>
+        function alphabet_order(str)
+          {
+            let a = str.split('').sort().join('');
+            document.write(a);
+            return a;
+          }
+      console.log(alphabet_order("webmaster"));
+    </script>
+</body>
+</html>

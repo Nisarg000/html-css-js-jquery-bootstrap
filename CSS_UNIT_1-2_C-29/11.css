@@ -1,0 +1,62 @@
+.text
+{
+	font-weight: bold;
+	left: 20px;
+	font-family: sheriff;
+}
+.table
+{
+	border-width: 1.5px;
+	border-style: dotted;
+}
+.Nokia_1
+{
+	height: 250px;width: 250px; background-repeat: no-repeat;
+	background-image: url(Nokia-1.jpg);
+}
+.Nokia_2
+{
+	height: 250px;width: 250px;background-repeat: no-repeat;
+	background-image: url(Nokia-2.jpg);
+}
+.Nokia_3
+{
+	height: 250px;width: 250px;background-repeat: no-repeat;
+	background-image: url(Nokia-3.jpg);
+}
+.Samsung_1
+{
+	height: 250px;width: 250px;background-repeat: no-repeat;
+	background-image: url(Samsung-1.jpg);
+
+}
+.Samsung_2
+{
+	height: 250px;width: 250px;
+	background-image: url(Samsung-2.jpg);
+	background-repeat: no-repeat;
+
+}
+.Samsung_3
+{
+	height: 250px;width: 250px;background-repeat: no-repeat;
+	background-image: url(Samsung-3.jpg);
+}
+.Blackberry_1
+{
+	height: 250px;width: 250px;
+	background-repeat: no-repeat;
+	background-image: url(Blackberry_1.jpg);
+}
+.Blackberry_2
+{
+	height: 250px;width: 250px;
+	background-repeat: no-repeat;
+	background-image: url(Blackberry_2.jpg);
+}
+.Blackberry_3
+{
+	height: 250px;width: 250px;
+	background-repeat: no-repeat;
+	background-image: url(Blackberry_3.jpg);
+}

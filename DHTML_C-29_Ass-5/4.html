@@ -1,0 +1,29 @@
+<!-- Create a webpage which has input field.
+• When the input field gets focus, a function is triggered which
+changes the background-color.
+• When the input field lost focus, a function is triggered which
+changes the background-color & display the alert box.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>4</title>
+<meta charset = "utf-8"/>
+</head>
+<body>
+	Name <input type = "text" id = "first_name" onfocus = "put()" onblur = "get()">
+<script type="text/javascript" language="javascript">
+	function get()
+	{
+		let a = document.getElementById('first_name');
+		a.style.background = "pink";
+	}
+	function put()
+	{
+		let a = document.getElementById('first_name');
+		a.style.background = "aquamarine";
+	}
+</script>
+
+</body>
+</html>

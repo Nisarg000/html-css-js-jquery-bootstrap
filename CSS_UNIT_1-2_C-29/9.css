@@ -1,0 +1,23 @@
+table
+{
+	
+	border:1px solid black; 
+	border-color: steelblue ;
+	border-width: 1.25px;
+	vertical-align: bottom;
+	text-align: center;
+}
+.pinkish
+{
+	border-style: dotted ;
+	border-color: pink;
+}
+.fonty
+{
+	 font-family: comic sans-serif;
+}
+.pic
+{
+	width: 200px;height: 200px;
+	background-image: url(gls.jpg);
+}
