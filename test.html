@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <style>
+        *
+        {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: inherit;
+        }
+        html
+        {
+            scroll-behavior: smooth;
+            padding: 0px;
+            margin: 0px;
+        }
+        body
+        {
+            margin: 0px;
+            padding: 0px;
+            /*float:left;*/
+        }
+        ul
+        {
+            list-style: none; 
+            width: 100%;height: 40px;
+            background-color: blue;
+            margin: 0;
+            top: 0px;
+            /* position: fixed; */
+        }
+        li a
+        {
+            float: left; 
+            padding: 12px 30px;
+            color: #fff;
+            text-decoration: none;
+        }
+        li a:hover
+        {
+            background-color: #000;color: #fff;
+        }
+        .home
+        {
+            width: 100%;height: 100vh;
+        }
+        .about
+        {
+            width: 100%;height: 100vh;
+        }
+        .service
+        {
+            width: 100%;height: 100vh;
+        }
+        .contact
+        {
+            width: 100%;height: 100vh;
+        }
+        .login
+        {
+            width: 100%;height: 100vh;
+        }
+        .header
+        {
+            width: 100%; height: 50px;
+            text-align: center;
+            background-color: #fff; 
+        }
+        .main
+        {
+            display: flex;
+            box-sizing: inherit;
+        }
+        .left
+        {
+            flex: 0.4;
+            width: 40%;
+            background-color:grey;
+            /*position: sticky;*/
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            border : 1px solid black;
+        }
+        .products
+        {
+            background-color: yellow;
+            height:100px;
+            width: 302px;
+            text-align: center;
+        }
+        .prod:hover
+        {
+            background-color: blue;
+            color:white;
+            cursor: pointer;
+        }
+        .right
+        {
+            flex: 0.6;
+            width: 60%;
+            background-color: green;
+        }
+        .left-line
+        {
+            color: 10px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Royal Technosoft</h1>
+    </div>
+    <ul>
+        <li><a href="#a">HOME</a></li>
+        <li><a href="#b">ABOUT US</a></li>
+        <li><a href="#c">SERVICE</a></li>
+        <li><a href="#d">CONTACT</a></li>
+        <li><a href="#e">LOGIN</a></li>
+    </ul>
+
+    <div class="main">
+        <div class="left">
+            <p class="products"><a class="prod">Products</a></p>
+            <hr class="left-line">
+        </div>
+        <div class="right">
+            <div class="home" id="a">
+                <h2>Home</h2>
+                <hr style="color: 1px dotted grey">
+                <p>this is home</p>
+            </div>    
+            <div class="about" id="b">
+                <h2>About</h2>
+                <hr style="color: 1px dotted grey">
+                <p>this is about</p>
+                
+            </div>    
+            <div class="service" id="c">
+                <h2>Service</h2>
+                <hr style="color: 1px dotted grey">
+                <p>this is service</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.0706892176595!2d70.79424371494883!3d21.97024988549604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39583891e0419e79%3A0x8e3f59755d6014e2!2sSharada%20Jhatakia%20Hospital!5e0!3m2!1sen!2sin!4v1589091088338!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                
+            </div>    
+            <div class="contact" id="d">
+                <h2>Contact</h2>
+                <hr style="color: 1px dotted grey">
+                <p>this is contact</p>
+
+                
+            </div>    
+            <div class="login" id="e">
+                <h2>Login</h2>
+                <hr style="color: 1px dotted grey">
+                <p>this is login</p>
+                <form>
+                    User name<input type="text" id="usn" onkeyup="MyFunction()" name="">
+                    <p id="ans_usn"></p>
+                    Password<input type="Password" id="psw" onkeyup="MyFunction()" name="">
+                    <p id="ans_psw"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+   function MyFunction()
+   {
+    var username = document.getElementById('usn').value;
+    if (username == "") 
+    {
+        document.getElementById('ans_usn').innerHTML="Username cannot be blank";
+    }
+    else
+        document.getElementById('ans_usn').innerHTML="";
+
+    var password = document.getElementById('psw').value;
+    if (password == "") 
+    {
+        document.getElementById('ans_psw').innerHTML="Username cannot be blank";
+    }
+    else
+        document.getElementById('ans_psw').innerHTML="";
+   }
+</script>
+</body>
+</html>

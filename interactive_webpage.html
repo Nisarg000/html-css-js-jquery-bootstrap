@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Interactive Webpage</title>
+    <style>
+        *{box-sizing: border-box;} /* * means all and this lines states that padding between box-border*/
+        body
+        {
+            margin: 0;
+        }
+        .header
+        {
+            width: 100%;padding: 5px; /*Use padding instead of height so when the browser
+            is in multi window the box changes too!*/
+            background-color: crimson;color: #fff;
+        }
+        .header1
+        {
+            width: 100%;padding: 20px;
+            background-color: #000;color: #fff;
+            text-align: center;font-size: 24px;/*The text stays aligned even when the size is reduced*/
+            position: sticky;top: 0;/*Always include this tag with sticky*/
+        }
+        .main
+        {
+            /* IMPORTANT:- the box flexes when the user reduces the window size
+            and when mobile size reduces the text aligns/wraps */
+            display: flex;flex-wrap: wrap;
+        }
+        .leftdiv
+        {
+            /*It is always recommended that the sum total should be 100%  */
+            flex: 20%;padding: 20px;background-color: #f134;
+        }
+        .rightdiv
+        {
+            flex: 80%;padding: 20px;background-color: burlywood;
+        }
+        .one
+        {
+            width: 100%;padding: 20px;
+            background-color: cadetblue;
+        }
+        .menu
+        {
+            display: flex;flex-wrap: wrap;
+            background-color: #262626;
+            justify-content: center;/*Aligns all the anchor tags don't use align-center*/
+        }
+        .menu a
+        {
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .menu a:hover
+        {
+            background-color: peru ;color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">+91 9512295237 </div>
+    <div class="header1">Poojara Telecom</div>
+    <div class="menu">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Products</a>
+        <a href="">Login</a>
+    </div>
+    
+    <div class="main">
+        <div class="leftdiv">
+            <h1>Products</h1>
+            <hr>
+            <div class="one">Samsung</div>
+            <div class="one">VIVO</div>
+            <div class="one">OPPO</div>
+        </div>
+     
+
+    <div class="rightdiv">
+        <h1>Product-info</h1>
+        <hr>
+        <div class="one" style="height: 200px;">OPPO</div>
+        </div>
+    </div>
+        <div class="leftdiv">
+            <h1>Products</h1>
+            <hr>
+            <div class="one">Samsung</div><br>
+            <div class="one">VIVO</div><br>
+            <div class="one">OPPO</div>
+        </div>
+
+        <div class="rightdiv">
+            <h1>Product-info</h1>
+            <hr>
+            <div class="one" style="height: 200px;">OPPO</div>
+            </div>
+        <div class="header">&copy;All rights reserved. | Developed by Pure_Donkey</div>    
+</body>
+</html>

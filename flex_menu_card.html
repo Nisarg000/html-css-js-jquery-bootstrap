@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Menu Card</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        *
+        {
+            box-sizing:border-box;
+        }
+        .main
+        {
+            position: absolute;
+            width: 100%;height: 100%; /*Important*/
+            display: flex;
+            border: 2px solid #000;
+        }
+        .main .im
+        {
+            background-color: cornflowerblue;
+            flex: 1; /*According to division divide.Here division is 5 so 100/5 = 20%. 	See line 20 */
+            transition: .5s ease-in-out/*for slow and fast effect*/;
+            position: relative;
+        }
+        .main .im .con
+        {
+            position: absolute;
+            bottom: 0px;/* content will be from bottom */
+            margin: 40px; /* The conents margin */
+            padding: 30px;/* The font will be away from box */
+            background: rgb(0,0,0,0.6);/* For Opacity */
+            color: #fff; /* For font color */
+            visibility: hidden;opacity: 0; /* Do either of them */
+            transition: 0s; /*optional*/
+            transform: translateY(100px); /*Here content will come from bottom to top*/
+        }
+        .main .im:hover
+        {
+            flex-grow: 5;
+        }
+        .main .im:nth-child(1)
+        {
+            background-image: url(strawberry.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .main .im:nth-child(2)
+        {
+            background-image: url(watermellon.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .main .im:nth-child(3)
+        {
+            background-image: url(cherry.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .main .im:nth-child(4)
+        {
+            background-image: url(pumpkin.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .main .im:nth-child(5)
+        {
+            background-image: url(pollution_southkorea.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .main .im:hover .con
+        {
+            visibility: visible;
+            opacity: 1;
+            transition: .5s;
+            transition-delay: .5s;
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="im">
+            <div class="con">
+                <h2>ONE</h2>
+                <p>Lorem ipsum dolor sit ametCum sociis natoque penatibus et magnis dis partu
+                    rient montes, nascetur ridiculus mus. </p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>TWO</h2>
+                <p> Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                     Aenean vulputate eleifend tellus. </p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>THREE</h2>
+                <p> Integer tincidunt. Cras dapibus. Vivamus e
+                    lementum semper nisi. Aenean vulputate eleifend tellus. </p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>Four</h2>
+                <p>dapibus in, viverra quis, feugiat a, tellus. 
+                    Phasellus viverra nulla ut metus varius laoreet.</p>
+            </div>
+        </div>
+        <div class="im">
+            <div class="con">
+                <h2>Five</h2>
+                <p>dapibus in, viverra quis, feugiat a, tellus. 
+                    Phasellus viverra nulla ut metus varius laoreet</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

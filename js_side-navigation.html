@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>navigation bar side</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css" lang="css">
+		body
+		{
+			font-family: all;
+			transition: background-color .5s;
+		}
+		.sidenav
+		{
+			height: 100%;
+			width: 0;
+			position: fixed;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+		}
+		.sidenav a
+		{
+			text-decoration: none;
+			font-size: 15px;
+			display: block;
+			transition: 0.3s;
+			padding: 8px 8px 8px 32px;
+			color: #818181;
+		}
+		.sidenav a:hover
+		{
+			color: #fff;
+		}
+		.sidenav .closebtn
+		{
+			position: absolute;
+			top:0;
+			right: 25px;
+			font-size: 36px;
+			margin-left: 50px;
+		}
+		#main/*For flex like effects*/
+		{
+			transition: margin-left .5s;
+			padding: 16px;
+		}
+		@media screen and (max-height: 450px) /*For mobile*/
+		{
+		  .sidenav 
+		  {
+		  	padding-top: 15px;
+		  }
+		  .sidenav a 
+		  {
+		  	font-size: 18px;
+		  }
+		}
+	</style>
+</head>
+<body>
+	<div class="sidenav" id="sidenav">
+		<a class="closebtn" onclick="CloseNav()">&times;</a>
+		<a href="#" class="fa fa-home">&nbsp Home</a>
+		<a href="#" class="fa fa-cloud-download">&nbsp Download</a>
+		<a href="#" class="fa fa-gift">&nbsp Gift Code</a>
+		<a href="#" class="fa fa-trophy">&nbsp Top Review</a>
+		<a href="#" class="fa fa-gear">&nbsp Settings</a>
+		<a href="#" class="fa fa-support">&nbsp Support</a>
+		<a href="#" class="fa fa-external-link-square">&nbsp Sign Out</a>
+	</div><!-- /sidenav -->
+	<div class="main" id="main">
+		<span style="font-size:30px;cursor:pointer" onclick="OpenNav()">&#9776;</span>
+		<h2>Sidebar #09</h2>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div><!-- /main -->
+	<script type="text/javascript" language="javascript">
+		function OpenNav()
+		{
+			document.getElementById('sidenav').style.width = "250px";
+			document.getElementById('main').style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+		function CloseNav()
+		{
+			document.getElementById('sidenav').style.width = "0";
+			document.getElementById('main').style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		}
+	</script>
+</body>
+</html>

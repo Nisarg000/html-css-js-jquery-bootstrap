@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<header>
+		<h2>
+			Product name
+			<input type = "text" id = "p_name" onkeyup = "myFunction()">
+		</h2>
+		<h2>Price
+			<input type = "text" id = "p_price" onkeyup = "myFunction()">
+		</h2>
+	</header>
+	<footer>
+		<h1>BILL</h1>
+		Product Name:-
+		<h4 id = "Ans_p-name"></h4>
+
+		Price:-
+		<h4 id = "Ans_p-price"></h4>
+
+		Quantity<input type = "text" id = "qty" name = "">
+		<p id = "Ans_qty"></p>
+		<button id = "btn_qty" onclick = "calc()"></button><br>
+
+		<!-- promocode<input type="checkbox" id="prmcd" name="">
+		<button onclick="promoCode()">Apply promocode</button> -->
+
+
+		<label for = "chkPromoCode">
+			<input type = "checkbox" id = "chkPromoCode" onclick = "ShowHideDiv(this)">
+			Do you have a Promo Code ?
+		</label>
+		<hr>
+		<div id = "dvPromoCode" style = "display: none">
+			<p id = "Ans_txtPromoCodeNumber">abc</p>
+			Enter number : <input type="text" id = "txtPromoCodeNumber"  onkeyup = "Valid_name()" name = "">
+			<p id = "error"></p>
+			<button id = "check_Ans_txtPromoCodeNumber"></button>
+		</div>
+	</footer>
+
+<script type = "text/javascript" language = "javascript">
+	function myFunction()
+	{
+		var p_id = document.getElementById('p_name').value;
+		document.getElementById('Ans_p-name').innerHTML = p_id;
+
+		var p_price_id = document.getElementById('p_price').value;
+		document.getElementById('Ans_p-price').innerHTML = p_price_id;
+	}
+	function calc()
+	{
+		var p_price_id = document.getElementById('p_price').value;
+		var calculation = document.getElementById('qty').value;
+		document.getElementById('Ans_qty').innerHTML = calculation * p_price_id;
+	}
+	function ShowHideDiv(chkPromoCode)
+	{
+		var dvPromoCode = document.getElementById("dvPromoCode");
+		dvPromoCode.style.display = chkPromoCode.checked ? "block" : "none";
+	}
+	function Valid_name()
+	{
+		var code = document.getElementById('Ans_txtPromoCodeNumber').innerHTML;
+		if (code == 'abc') 
+		{
+			document.getElementById('error').innerHTML = "Correct promocode!"
+		}
+		else
+		{
+			document.getElementById('error').innerHTML = "Wrong promocode!"
+		}
+	}
+
+</script>
+</body>
+</html>

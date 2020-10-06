@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>changing animation</title>
+	<style type="text/css">
+
+		.one
+		{
+			width: 200px;height: 200px;background-color: red;
+			line-height: 200px;text-align: center;font-weight: bold;
+			margin-left: 200px;margin-top: 200px;
+			animation-name: changecolor;animation-duration: 1.5s;animation-iteration-count: infinite;
+		}
+
+		.one:hover
+		{
+			background-color: royalblue;
+		}
+
+		@keyframes changecolor
+		{
+			0%{background-color: royalblue;}
+			50%{background-color: red;transform:scale(0) rotate(90deg); border-radius: 50%;}
+			100%{background-color: seagreen;}
+		}
+	</style>
+</head>
+<body>
+	<div class="one">This is a circle</div>
+</body>
+</html>

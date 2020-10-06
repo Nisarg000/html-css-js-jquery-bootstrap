@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>option</title>
+</head>
+<body>
+    <select id = "languages" onchange="getdata()">
+        <option value = "HTML">HTML</option>
+        <option value = "CSS">CSS</option>
+        <option value = "JS">JS</option>
+        <option value = "C++">C++</option>
+        <option value = "PHP">PHP</option>
+    </select>
+    <p id = "answer"></p>
+<script>
+    function getdata()
+    {
+        let a = document.getElementById('languages').value;
+        document.getElementById('answer').innerHTML = a; // this wil write the answer/paragraph in p tag    
+    }
+</script>
+</body>
+</html>

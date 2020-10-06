@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INSTAGRAM</title>
+    <style>
+        body
+        {
+            margin: 0;background-color: #f1f1f1;
+        }   
+        *{box-sizing: border-box;}
+        .main
+        {
+            position: absolute;
+            left: 50%; margin: 10px;
+            transform: translate(-50%);
+        }
+        .sub
+        {
+            width: 300px; /*Never give height*/ padding: 30px;
+            border: 1px solid solid rgba(0,0,0,.4);
+            background-color: #fff;
+        }
+        .tbl
+        {
+            width: 100%;
+        }
+        .txt
+        {
+            width: 100%;padding: 7px;
+            border: 1px solid rgba(0,0,0,.2);border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+        .btn
+        {
+            width: 100%;padding: 7px;
+            border: 1px solid rgba(0,0,0,.2);border-radius: 4px;
+            background-color: dodgerblue;
+            color: #fff;
+            cursor: pointer; /*To change the cursort when then user hovers*/
+        }
+        span /*You can simply just do this shit instead -------- OR -----------*/
+        {
+            position: relative; /*Here the parents position should always be relative*/
+            color: #6666;
+        }
+        span:before
+        {
+            content: ''; /*Compulsorily write content otherwise it won't work*/
+            position: absolute;
+            width: 430%; height: 1px; left: -100px; top: 6px;
+            background-color: #3333; 
+        }
+        span:after
+        {
+            content: ''; /*Compulsorily write content otherwise it won't work*/
+            position: absolute;
+            width: 430%;height: 1px;left: 25px;top: 6px;
+            background-color: #3333; 
+        }
+        .fb
+        {
+            color: #385185; /*Perfect pixel copied from insta page by me*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub-division">
+            <table align="center" class="tbl">
+                <form>
+                    <tr class="insta_header">
+                        <td>Image</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="Phone number, usernname, or email">
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <input type="text" placeholder="Full Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Username">
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <input type="password" placeholder="Password">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" value="login" class="btn">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <span>OR</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" >
+                            <span class="fb">f Log in with Facebook</span>
+                        </td  >
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

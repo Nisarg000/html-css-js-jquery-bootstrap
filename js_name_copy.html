@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>copied name</title>
+</head>
+<body>
+    <h1>Enter your name : </h1>
+    <input type = "text" id = "user_input_1" value = "input">
+    <button onclick = "copy()">Copy</button>
+    <h2 id = "pasted"></h2>
+    <script>
+    function copy()
+    {
+        var a = document.getElementById('user_input_1').value;//for input type text box it is compulsory to use value
+        document.getElementById('pasted').innerHTML = a;
+    }
+</script>
+</body>
+</html>

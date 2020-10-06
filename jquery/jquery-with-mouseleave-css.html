@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>whatever</title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function()
+		{
+			$('#oid').mouseenter(function()
+			{
+				document.getElementById('oid').style.height="0px";
+			});
+			$('#oid').mouseleave(function()
+			{
+				document.getElementById('oid').style.height="200px";
+				
+			});
+		});
+	</script>
+	<style type="text/css">
+		.one
+		{
+			background-color: aqua;
+			width: 200px;height: 200px;
+		}
+	</style>
+	
+</head>
+<body>
+	<p id="pid">Hover me!</p>
+	<div class="one" id="oid"></div>
+</body>
+</html>

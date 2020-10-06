@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" id="user_input_1" placeholder="Enter the first value" ></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="user_input_2" placeholder="Enter the second value" ></td>
+        </tr>
+        <tr>
+            <td> <input type="button" onclick="addition()" value = "add"> </td>
+            <td> <input type="button" onclick="subtraction()" value = "sub"> </td>
+            <td> <input type="button" onclick="division()" value = "div"> </td>
+            <td> <input type="button" onclick="multiplication()" value = "mul"> </td>
+        </tr>
+        <tr>
+            <td><h1 id="answer"></h1></td>
+        </tr>
+    </table>
+    <script>
+        function addition()
+        {
+            var a = parseInt(document.getElementById('user_input_1').value);
+            var b = parseInt(document.getElementById('user_input_2').value);
+            var ans = a + b ;
+            document.getElementById('answer').innerHTML = ans;
+        }
+        function subtraction()
+        {
+            var a = parseInt(document.getElementById('user_input_1').value);
+            var b = parseInt(document.getElementById('user_input_2').value);
+            var ans = a - b ;
+            document.getElementById('answer').innerHTML = ans;
+        }
+        function division()
+        {
+            var a = parseInt(document.getElementById('user_input_1').value);
+            var b = parseInt(document.getElementById('user_input_2').value);
+            var ans = a / b ;
+            document.getElementById('answer').innerHTML = ans;
+        }
+        function multiplication()
+        {
+            var a = parseInt(document.getElementById('user_input_1').value);
+            var b = parseInt(document.getElementById('user_input_2').value);
+            var ans = a * b ;
+            document.getElementById('answer').innerHTML = ans;
+        }
+    </script>
+</body>
+</html>

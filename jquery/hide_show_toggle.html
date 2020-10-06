@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	<script type="text/javascript" src="jquery-3.4.1.min.js">
+		$(document).ready(function)
+		{
+			$("#sh").click(function)
+			{
+				$("#abc").slideToggle();//to do both
+			}
+
+			$("#hd").click(function)
+			{
+				$("abc").slideUp(1000);
+			}
+			$("#shw").click(function)
+			{
+				$("abc").slideDown(1000);
+			}
+		};
+	</script>
+	<style type="text/css">
+		body
+		{
+			margin: 0;
+			font-family: arial;
+		}
+		*
+		{
+			box-sizing: border-box;
+		}
+		.one
+		{
+			width: 200px;background-color: cornflowerblue;
+			padding: 20px;
+			color:#000;
+		}
+		h1{
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<button id = "sh">hide/show</button>
+	<button id = "hd">hide</button>
+	<button id = "shw">show</button>
+
+	<div class="one"id="abc">
+		<h1>Details</h1>
+		<hr>
+		<p>voesanbfv joagrvaeuwscnbwarfebcvawyroliebcvearfbauwrgfu9awgfiuwehfuiehgWUHcvy8aqtywtgEHvubraowliFEbvawigfhcWEH</p>
+	</div>
+
+</body>
+</html>

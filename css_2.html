@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html-CSS</title>
+	<style>
+		body
+		{
+			margin: 0px; /*This margin space removes the unnecessary cluttered space in html body */
+		}
+		.header
+		{
+			width: 100%;height: 100px;background-color: aquamarine;
+		}
+		.section
+		{
+			width: 100%;height: 550px;background-color: burlywood;
+		}
+		.footer
+		{
+			width: 100%;height: 40px;background-color: black;
+		}
+		ul
+		{
+			width: 100%;height: 40px; background-color: black; margin: 0;list-style: none; /* list-style removes bullet points*/
+		}
+		li a
+		{
+			float: left;padding: 12px 50px;color: white;text-decoration: none; /*li a is used for navigating to li tag and inide li tag to a tag,Padding 12px and 50px stands for right left top and bottom.The text-decoration is used here to delete the underlined decoration,float is used for bringing all the list in line together*/
+		}
+		li a:hover{background-color: white;color: #ff0111;}
+		/*The hover tag is used for hover effect when the user hovers the mouse over the listed item*/
+	</style>
+</head>
+<body>
+<div class="header"></div>
+<ul>
+	<li>	<a href="#" title="This is home">Home	</a>	</li>
+	<li>	<a href="#" title="This is for introduction about us">About	</a>   </li> <!--The title tag works like tooltip-->
+	<li>	<a href="#">Service </a> 	</li>
+	<li>	<a href="#">Product </a> 	</li>
+	<li>	<a href="#">Contact </a> 	</li>
+</ul>
+<div class="section"></div>
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>like button count</title>
+</head>
+<body>
+    <button onclick="counter()" id = "btn">Like
+    </button>
+    &nbsp;
+    <span id="res"></span>
+    <script>
+        let count = 0;
+        function counter()
+        {
+            count += 1;
+            document.getElementById('res').innerHTML = count;
+            //document.getElementById('btn').style.display="none";
+        }
+    </script>
+</body>
+</html>

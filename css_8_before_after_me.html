@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>not before and after typing mistake</title>
+    <style>
+        body
+        {
+            background-color: teal;
+        }
+        .main
+        {
+            width: 200px;height: 200px;
+            background:url('pollution_southkorea.jpg');background-size:cover;
+            margin-left: 200px /*moves image from left to right to center*/;
+            margin-top: 200px/*moves image from top to bottom to proper center*/;
+        }
+        .inner_one
+        {
+            width: 195px;height: 195px;
+        }
+        .inner_one:hover
+        {
+            border: 5px solid palevioletred;
+        }
+        .two
+        {
+            width: 200px;height: 200px;
+            background-color: greenyellow;
+            position: absolute;
+            transform: scale(0);
+            transition: .5s;
+
+        }
+        .two:hover
+        {
+            background:2px solid greenyellow;
+            transform: scale(1);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+        <div class="two"></div>
+     </div>
+</body>
+</html>

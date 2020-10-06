@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="1">
+	<title>Simple text animation</title>
+	<style type="text/css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+			font-family: sans-serif;
+		}
+
+		body
+		{
+			background : #000;
+		}
+
+		.container
+		{
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100%; /*To completely fix the words in one line*/
+		}
+
+		.container span
+		{
+			/*color: white;*/ /*overwrite color to all span*/
+			text-transform: uppercase;
+			display: block;
+		}
+		.text1
+		{
+			color: white;
+			font-size: 60px;
+			font-weight: 700;
+			letter-spacing: 8px;
+			margin-bottom: 20px; /*Create gap between text1 and text2*/
+			background:black;
+			position: relative;
+			animation : text 1.5s 1;
+		}
+		.text2
+		{
+			font-size: 30px;
+			color: #6ab04c;
+		}
+
+		@keyframes text
+		{
+			0%
+			{
+				color: black;
+				margin-bottom: -20px; /*Seprating words*/
+			}
+
+			/*30%
+			{
+				letter-spacing: 25px;
+				margin-bottom: -40px;
+			}*/
+
+			/*85%
+			{
+				letter-spacing: 8px;
+				margin-bottom: -40px;
+			}*/
+
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<span class="text1">Welcome Mr.</span>
+	<span class="text2">Pure Donkey</span>
+</div>
+</body>
+</html>

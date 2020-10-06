@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+<table border="1" align="center">
+<form>
+	<tr>
+		<td align="center" colspan="9" style="color: red;background-color: yellow"><b>Student Result</b></td>
+	</tr>
+	<tr>
+		<td>roll number</td>
+		<td>Name</td>
+		<td>Subject 1</td>
+		<td>Subject 2</td>
+		<td>Subject 3</td>
+		<td>Subject 4</td>
+		<td>Total</td>
+		<td>Percentage</td>
+		<td>Grade</td>
+	</tr>
+	<tr>
+		<td><input type="text" name="roll number" id="no"></td>
+		<td><input type="text" name="Name" id="stu_name"></td>
+		<td><input type="text" name="Subject 1" id="subj_1"></td>
+		<td><input type="text" name="Subject 2" id="subj_2"></td>
+		<td><input type="text" name="Subject 3" id="subj_3"></td>
+		<td><input type="text" name="Subject 4" id="subj_4" onkeyup="Subj_4_Function()"></td>
+		<td><input type="text" name="Total" id = "Ans_Total"></td>
+		<td><input type="text" name="Percentage" id="percent"></td>
+		<td><input type="text" name="Grade" id="grad"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="roll number" id="no"></td>
+		<td><input type="text" name="Name" id="stu_name"></td>
+		<td><input type="text" name="Subject 1" id="subj_1" ></td>
+		<td><input type="text" name="Subject 2" id="subj_2" ></td>
+		<td><input type="text" name="Subject 3" id="subj_3" ></td>
+		<td><input type="text" name="Subject 4" id="subj_4" onkeyup="Subj_4_Function()"></td>
+		<td><input type="text" name="Total" id = "Ans_Total" onkeyup="Total_Function()"></td>
+		<td><input type="text" name="Percentage" id="percent"></td>
+		<td><input type="text" name="Grade" id="grad"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="roll number" id="no"></td>
+		<td><input type="text" name="Name" id="stu_name"></td>
+		<td><input type="text" name="Subject 1" id="subj_1" ></td>
+		<td><input type="text" name="Subject 2" id="subj_2" ></td>
+		<td><input type="text" name="Subject 3" id="subj_3" ></td>
+		<td><input type="text" name="Subject 4" id="subj_4" onkeyup="Subj_4_Function()"></td>
+		<td><input type="text" name="Total" id = "Ans_Total" onkeyup="Total_Function()"></td>
+		<td><input type="text" name="Percentage" id="percent"></td>
+		<td><input type="text" name="Grade" id="grad"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="roll number" id="no"></td>
+		<td><input type="text" name="Name" id="stu_name"></td>
+		<td><input type="text" name="Subject 1" id="subj_1" ></td>
+		<td><input type="text" name="Subject 2" id="subj_2" ></td>
+		<td><input type="text" name="Subject 3" id="subj_3" ></td>
+		<td><input type="text" name="Subject 4" id="subj_4" onkeyup="Subj_4_Function()"></td>
+		<td><input type="text" name="Total" id = "Ans_Total" onkeyup="Total_Function()"></td>
+		<td><input type="text" name="Percentage" id="percent"></td>
+		<td><input type="text" name="Grade" id="grad"></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="roll number" id="no"></td>
+		<td><input type="text" name="Name" id="stu_name"></td>
+		<td><input type="text" name="Subject 1" id="subj_1" ></td>
+		<td><input type="text" name="Subject 2" id="subj_2" ></td>
+		<td><input type="text" name="Subject 3" id="subj_3" ></td>
+		<td><input type="text" name="Subject 4" id="subj_4" onkeyup="Subj_4_Function()"></td>
+		<td><input type="text" name="Total" id = "Ans_Total"></td>
+		<td><input type="text" name="Percentage" id="percent"></td>
+		<td><input type="text" name="Grade" id="grad"></td>
+	</tr>
+	
+</form>
+</table>
+	<title>task student</title>
+	<script type="text/javascript" language="javascript">
+		
+		function Subj_4_Function() //for subj 4
+		{
+			var subj_1 = parseInt(document.getElementById('subj_1').value);
+			var subj_2 = parseInt(document.getElementById('subj_2').value);
+			var subj_3 = parseInt(document.getElementById('subj_3').value);
+			var subj_4 = parseInt(document.getElementById('subj_4').value);
+			/*if (isNaN(subj_4)) 
+			{
+				alert("Please enter a valid number");
+			}*/
+		// var Total = document.getElementById('Ans_Total').value;
+			var Total =  subj_1+subj_2+subj_3+subj_4;
+			document.getElementById('Ans_Total').value = Total;
+			var per = document.getElementById('percent');
+			per = (Total * 100) / 400;
+			document.getElementById('percent').value = per;
+
+			var grades = per; //Assing the values of total percentage to grades
+			if (grades > 90) 
+			{
+				document.getElementById('grad').value="A+";
+			}
+			if (grades > 80 && grades < 90) 
+			{
+				document.getElementById('grad').value="A";
+			}
+			if (grades > 70 && grades < 80) 
+			{
+				document.getElementById('grad').value="B";
+			}
+			if (grades > 60 && grades < 70) 
+			{
+				document.getElementById('grad').value="C";
+			}
+			if (grades > 50 && grades < 60) 
+			{
+				document.getElementById('grad').value="D";
+			}
+			if (grades > 35 && grades < 50) 
+			{
+				document.getElementById('grad').value="E";
+			}
+			if(grades < 35)
+			{
+				document.getElementById('grad').value="F";
+			}
+		}
+	</script>
+</body>
+</html>

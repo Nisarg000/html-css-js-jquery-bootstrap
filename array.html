@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>1</title>
+</head>
+<body>
+	<h1 id = "arr"></h1>
+	<button onclick="addarray()">Add data</button>
+<script type="text/javascript">
+	let course = ["html","css","js"];
+
+	//course[0] = "java";//overwrite
+	// document.getElementById('arr').innerHTML=course;
+
+	function addarray()
+	{
+		// course.push("JAVA");
+		// course.pop();
+		// course.splice(2,0,"robotics","django");
+		let videogames = ["god of war","Assassin's Creed","Watch Dogs 2"]
+		let indie = ["Bubble Trouble","Commando 2"]
+		let merge = videogames.concat(indie);
+		// document.getElementById('arr').innerHTML=course;
+		document.getElementById('arr').innerHTML=merge;
+	}
+</script>
+</body>
+</html>

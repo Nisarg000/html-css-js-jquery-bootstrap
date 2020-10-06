@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bordered-boxes</title>
+	<style >
+		body
+		{
+			margin: 0px;
+		}
+		.left
+		{
+			float: left;border: 1px solid black;width: 20%;height: 100vh; /*vh stands for view height as it adjusts to the screen height and if you do height=100% then it will adjust the height according to what the user types on the screen*/
+		}	
+		.whole
+		{
+			float: left; margin: 0px;width: 70%;height: 93.5vh;border: 1px solid black;padding: 20px;
+
+		}
+		.Top
+		{
+			float: top;margin: 0px;width:20% ;height: 80px;border: 1px solid black;padding: 10px;
+		}
+		.bottom-left
+		{
+			float:left;margin-top: 20px; margin-left: 0px;height: 130px;width:150px ;border: 1px solid black;padding: 30px;
+		}
+		.bottom-middle
+		{
+			float:left;margin-top: 20px ;margin-left: 100px;height: 130px;width:150px ;border: 1px solid black;padding: 30px;
+		}
+		.bottom-right
+		{
+		float:left; margin-top: 20px;margin-left: 100px;height: 130px;width:150px ;border: 1px solid black;padding: 30px;	
+		}
+	</style>
+</head>
+<body>
+<div class="left"></div>
+<div class="whole">
+<div class="Top"></div>
+<div class="bottom-left"></div>
+<div class="bottom-middle"></div>
+<div class="bottom-right"></div>
+</div> <!-- Since we want to write content inside the whole we will "nest" all the items -->
+</body>
+</html>

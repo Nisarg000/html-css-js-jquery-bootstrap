@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blank check</title>
+    <meta charset = "utf-8"/>
+    <style>
+        .colr
+        {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form name = "frm">
+        <table>
+            <tr>
+                <td>
+                    <input type="text" name="un" placeholder="Enter your username" id="uname">
+                    <div id="errun" class="colr"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="pwd" placeholder="Enter Password" id="pass">
+                    <div id="errpwd" class="colr"></div>
+                </td>
+               
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="login" onclick="valid()">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script type="text/javascript" lang="javascript">
+            function valid()
+            {
+                var u = document.frm.un.value;
+                var p = document.frm.pwd.value;
+                if(u == "")
+                {
+                    document.getElementById('errun').innerHTML="Username Required...";
+                    document.getElementById('uname').style.border="2px solid red";
+                }f
+                else
+                {
+                    document.getElementById('errun').innerHTML="";
+                    document.getElementById('uname').style.border="2px solid green";
+                }
+                
+                if(p == "")
+                {
+                    document.getElementById('errpwd').innerHTML="Password Required...";
+                    document.getElementById('pass').style.border="2px solid red";
+                }
+                else
+                {
+                    document.getElementById('errpwd').innerHTML=""
+                    document.getElementById('pass').style.border="2px solid green";
+                }
+            }
+
+    </script>
+</body>
+</html>

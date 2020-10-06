@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>text like transform</title>
+    <style>
+        .one
+        {
+            width: 100px;height: 50px;
+            background-color: coral;
+            position: relative; /*The position of the parent should always be relative*/
+            border-radius: 10px;
+        }
+        .one:before
+        {
+            content: ''; /*Compulsorily leave it blank*/
+            position: absolute; /*Always th epoistion of before and after should be absolute*/
+            width: 20px;height: 20px;
+            background-color: coral;
+            bottom: -10px; left: 35px;
+            transition: .5s;
+            transform: translateY(-30px) rotate(45deg);
+        }
+        .one:hover:before
+        {
+            opacity: 1;
+            transform: translateY(0px) rotate(45deg) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

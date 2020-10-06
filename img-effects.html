@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="refresh" content="1"> -->
+	<title>Effects</title>
+	<style type="text/css" lang="css">
+		*
+		{
+			margin: 0px;
+			padding: 0px;
+			background-color: orange;
+		}
+		img
+		{
+			transition: .5s;
+			padding-left: 500px;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		button
+		{
+			cursor: pointer;
+			color: #000000;
+			width: 90px;
+			height: 30px;
+			border-radius: 50px;
+		}
+		button:hover
+		{
+			color: #fff;
+			background-color: brown;
+			border-right-width: 20px;
+			border-right-color: green;
+			border-left-width: 20px;
+			border-left-color: green;
+		}
+		.main
+		{
+			padding-top: 10px;
+			padding-left: 450px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="pollution_southkorea.jpg" id="pic" height="400px" width="500px">
+	</div>
+	<div class="main">
+		<button id="opacity" class="opacity" onclick="My_Function_Opacity()">opacity</button>&nbsp
+		<button id="shadow" class="shadow" onclick="My_Function_Shadow()">Shadow</button>&nbsp
+		<button id="rotate" class="rotate" onclick="My_Function_Rotate()">rotate</button>&nbsp
+		<button id="filter" class="filter" onclick="My_Function_Filter()">filter</button>&nbsp
+		<button id="brightness" class="brightness" onclick="My_Function_Brightness()">brightness</button>&nbsp
+		<button id="blur" class="blur" onclick="My_Function_Blur()">blur</button>
+	</div>
+	<script type="text/javascript" language="javascript">
+		function My_Function_Opacity()
+		{
+			var opacity = document.getElementById('opacity');
+			opacity = document.getElementById('pic').style.opacity="0.6";
+		}
+		function My_Function_Shadow()
+		{
+			var shadow = document.getElementById('shadow');
+			shadow= document.getElementById('pic').style.boxShadow="10px 10px 10px grey";
+		}
+		function My_Function_Rotate()
+		{
+			// var rotate = document.getElementById('rotate');
+			// rotate = document.getElementById('pic').style.rotation="180deg";
+			pic = document.getElementById('pic');
+			pic.style.transform = 'rotate(180deg)';
+		}
+		function My_Function_Filter()
+		{
+			var pic = document.getElementById('pic');
+			pic.style.filter="saturate(15)";
+		}
+		function My_Function_Brightness()
+		{
+			var pic = document.getElementById('pic');
+			pic.style.filter="brightness(3)";
+		}
+		function My_Function_Blur()
+		{
+			var pic = document.getElementById('pic');
+			pic.style.filter="blur(6px)";
+		}
+	</script>
+</body>
+</html>

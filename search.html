@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Awesome Search box</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        background: #e84118;
+    }
+    .search-box
+    {
+        position: absolute;
+        top: 50%; /*Brings search box from margin zero left corner to top-center*/
+        left: 50%; /* nearly Perfect center from left */
+        transform: translate(-50%,-50%); /*Better center position*/
+        background: #2f3640;
+        height: 40px;
+        border-radius: 40px; /*Rounder edges*/
+        padding: 10px; /*Fills the search box perfectly.*/ 
+    }
+      .search-box:hover > .search_text /*Understand this thing later*/
+      {
+        width:240px;
+        padding : 0.6px;  
+      }    
+       .search-box:hover > .search_button /*Understand this thing later*/
+      {
+        background : #fff;
+        color: #000;
+      }    
+      .search_button
+    {
+        color: #e84118;
+        float: right;
+        width: 40px; /*To adjust the width of grey box*/
+        height: 40px;
+        border-radius: 50%;
+        background: #2f3640;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition : 0.4s;
+        color: #fff;
+        cursor: pointer;
+    }
+    .search_button > i
+    {
+        font-size: 30px;
+    }
+      .search_text
+      {
+        border: none; /*removes the whitescale border*/
+        background: none; /*To remove the white background*/
+        outline:none; /*Check this later*/
+        float: left;
+        padding : 0;
+        color : #fff;
+        font-size: 16px;
+        transition : 0.4s;
+        line-height : 40px;
+        width : 0px;
+        /* width : 240px; */
+        font-weight: bold;
+      }  
+      
+    </style>
+</head>
+
+<body>
+    <div class="search-box">
+        <input class="search_text" type="text" placeholder="Type to search">
+        <a class="search_button" href="#">
+            <i class="fas fa-search"></i>
+        </a>  
+    </div>
+</body>
+
+</html>

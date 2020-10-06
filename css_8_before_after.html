@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>before-after</title>
+    <style>
+        body
+        {
+            background-color: #333;
+        }
+        .one
+        {
+            width: 200px;height: 200px;background-color: black;
+            margin-left: 200px;margin-top: 200px; /*To move the main box to the center*/
+            position: relative;
+        }
+        .one:before /*No space should be there between .one:before*/
+        {
+            content: '';/*You have to compulsorily type content in before/after tag*/
+            /* width: 20px;height: 20px; to see my effects while programming after programming remove it */
+            width:0px;height:0px; 
+            background-color: #e65151;
+            position: absolute;/*To display the box as it is default relative*/
+            transition: .5s;
+        }
+        .one:hover
+        {
+            border: 2px solid springgreen;
+            background: transparent;
+        }
+        .one:hover:before
+        {
+            width: 200px;height: 200px;background: transparent;border: 2px solid yellow;
+            /*z-index: -1; this makes the hover behind the .one main box*/
+            transform: rotate(45deg);
+            /* background: url(pollution_southkorea.jpg);
+            position: absolute; */
+            
+        }
+        .one:after
+        {
+            content: '';
+            width: 200px;height: 200px;background-color: tomato;
+            position: absolute;/*use transform otherwise the whole .one main box will be covered*/
+            transform: scale(0);
+            transition: .5s;transition-delay:.5s;
+            left:0; /*refer to line 56 and line 17*/
+        }
+        .one:hover:after
+        {
+            transform: scale(1); /*refer to line 39 & 40*/
+            background: url(pollution_southkorea.jpg);
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one"><font color="white">Hover at me!</font></div>
+    
+</body>
+</html>

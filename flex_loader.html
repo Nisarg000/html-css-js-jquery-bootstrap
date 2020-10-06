@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex circle transformation</title>
+    <style>
+        
+        body
+        {
+            background-color: #000000;
+        }
+
+        .main
+        {
+            position: absolute;
+            top: 50%; left: 50%;
+           transform: translate(-50%,-50%); /* To get the box exactly in center */
+        }
+        .content
+        {
+            width: 200px;height: 200px;
+            line-height: 200px; /*Refer to line 17. To get the text exactly in between/center*/
+            background-color: coral;
+            text-align: center;
+            color: cornsilk;
+            border-radius: 50%; /*To change the square into circle */
+            font-size: 36px;
+            animation: loader linear 1s infinite; /*Here the animation name is loader
+            and the linear is used here for an smooth effect with animation-time of 1s and it 
+            runs over till infinity*/
+        }
+        @keyframes loader
+        {
+            0% {box-shadow: 0 0 0 0 rebeccapurple;}
+            40% {box-shadow: 0 0 0 50px mediumspringgreen;}
+            80% {box-shadow: 0 0 0 80px palevioletred; opacity : .5s;}
+            100% {box-shadow: 0 0 0 0 cornflowerblue;}
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="content">Pure_Donkey</div>
+    </div>
+   <p style="color: rgb(217, 231, 19); text-align: center; text-decoration: underline;
+        font-size: 35px;">
+    THIS IS TO DEMONSTRATE THE FLEX ELEMENT by Nisarg
+    </p>
+   
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>changing animation</title>
+	<style type="text/css">
+
+		.one
+		{
+			width: 200px;height: 200px; border:10px solid white; /* Use color pink here to see the border of the square/circle */
+			margin-top: 200px;margin-left: 200px ;border-top:10px solid red;border-radius: 50%; /* border-radius is for making the circle round instead of square */
+			animation-name: load;animation-duration: 1.5s;animation-iteration-count: infinite;animation-timing-function: linear;
+		}
+
+		.one:hover
+		{
+			background-color: royalblue;
+		}
+
+		@keyframes load
+		{
+			0%{transform:/*scale(0) */rotate(360deg);/*use 360 deg for making loading animation*/border-top:10px solid green;}
+			25%{border-top:10px solid blue;}
+			50%{border-top:10px solid yellow;}
+			100%{/*transform: scale(1);*/ border-top:10px solid red;}
+		}
+	</style>
+</head>
+<body>
+	<div class="one" ></div>
+</body>
+</html>

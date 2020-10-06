@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3</title>
+<style> 
+	body
+	{
+		margin: 175px;background:linear-gradient(to bottom, rgba(156, 156, 156, 1), rgba(156, 156, 156, 0.5)) ;
+	}
+	.card
+	{
+		width: 300px;height: 100%; float: right; /*The card tag over here is used to represent both the head and foot class;
+		the card tag has height 400 px so notice that the bacground-image is of 300px and the foot tag for 100 px caption*/
+
+	}
+	.head
+	{
+		width: 300px;height: 300px;background:url('pollution_southkorea.jpg'); /*Just put image path or name here*/
+		background-size: cover; line-height: 300px;text-align: center;font-size: 130px; background-repeat: no-repeat;
+	}
+	.head:hover{color: white;}
+	.foot
+	{
+		width: 300px;height: 100px;background-color: black;color: white;
+		line-height: 100px;text-align: center;font-size: 30px;opacity: 0;
+		transition: .5s;transform: translateY(-600px); /*The line-height should be equal to the height of foot ; transform: translateY over here keeps the transform above the original 'card' which can later be used for top to bottom transition*/
+	}
+	.head:hover ~ .foot /*for calling the class foot the symbol tilde is used*/
+	{
+		opacity: 1;transform: translateY(-100px) rotate(360deg); /*Opacity ranges from 0 to 1; translate brings the transformation from above card to the foot part */
+	} 
+	.card2
+	{
+		
+		width: 300px;height: 100%; /*The card tag over here is used to represent both the head and foot class;
+		the card tag has height 400 px so notice that the bacground-image is of 300px and the foot tag for 100 px caption*/
+	}
+	.head2
+	{
+		width: 300px;height: 300px;background:url('pollution_southkorea.jpg'); /*Just put image path or name here*/
+		background-size: cover; line-height: 300px;text-align: center;font-size: 130px; background-repeat: no-repeat;
+	}
+	.head2:hover{color: white;}
+	.foot2
+	{
+
+		width: 300px;height: 100px;background-color: black;color: white;
+		line-height: 100px;text-align: center;font-size: 30px;opacity: 0;
+		transition: .5s;transform: translateY(-600px); /*The line-height should be equal to the height of foot ; transform: translateY over here keeps the transform above the original 'card' which can later be used for top to bottom transition*/
+	}
+	.head2:hover ~ .foot2 /*for calling the class foot the symbol tilde is used*/
+	{
+		opacity: 1;transform: translateY(-100px) rotate(360deg); /*Opacity ranges from 0 to 1; translate brings the transformation from above card to the foot part */
+	} 
+
+</style>
+</head>
+<body>
+	<div class="card">
+		<div class="head">02</div>
+		<div class="foot">Pollution in South korea</div>
+	</div>
+	<div class="card2">
+		<div class="head2">02</div>
+		<div class="foot2">Pollution in South korea</div>
+	</div>
+</body>
+</html>
